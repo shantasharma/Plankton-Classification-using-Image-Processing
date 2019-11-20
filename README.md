@@ -9,3 +9,7 @@ Stanford's paper on the same project
 http://cs231n.stanford.edu/reports/2015/pdfs/rastogi_yu.pdf
 2.
 http://cs231n.stanford.edu/reports/2015/pdfs/ymkuang_project.pdf
+
+
+Image classification tutorial:
+https://www.tensorflow.org/tutorials/images/classification

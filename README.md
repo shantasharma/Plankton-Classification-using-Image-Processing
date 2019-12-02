@@ -15,5 +15,3 @@ http://cs231n.github.io/
 
 Image classification tutorial:
 https://www.tensorflow.org/tutorials/images/classification
-
-

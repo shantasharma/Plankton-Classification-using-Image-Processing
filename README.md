@@ -15,3 +15,5 @@ http://cs231n.github.io/
 
 Image classification tutorial:
 https://www.tensorflow.org/tutorials/images/classification
+
+Enhanced convolutional neural network for plankton identification and enumeration https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219570#abstract0

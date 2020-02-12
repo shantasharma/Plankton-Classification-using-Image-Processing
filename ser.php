@@ -31,8 +31,16 @@
             <li id="exit" class="exit-btn hide-desktop">
                 <img src="images/exit.svg" alt="exit menu">
             </li>
-            <li><a href="landing.php">Home</a></li>
-            Hi!! <?php echo $_SESSION["email"] ?>
+            <li class="logout">
+            <h3>    
+            Welcome, <?php echo $_SESSION["email"] ?>
+            </h3>    
+        </li>
+        <li>
+        <h3>
+        <a href="logout.php">Sign-out</a>    
+        </h3>
+        </li>
             
         </ul>
     </nav>

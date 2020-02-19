@@ -46,23 +46,16 @@
     </nav>
     </header>
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<div class="file-upload">
-  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
+  <br> <br><br> <br><br> <br>
   <div class="image-upload-wrap">
-    <form action="zip.php" method="post" class="needs-validation" novalidate>
-    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-    <div class="drag-text">
-      <h3>Drag and drop a file or select add Image</h3>
-    </div>
+    <form action="zip.php" method="post"  enctype="multipart/form-data" class="needs-validation" >
+        <div class="form-group">
+            <label for="zip">Upload a zip folder</label>
+            <input type="file" class="form-control" id="zip" name="zip" required>
+        </div> <br> <br> <br> <br>
+        <button type="submit" class="btn btn-primary" value="Upload Image" onclick="document.getElementById('myInput').value">Submit</button> 
   </div>
-  <div class="file-upload-content">
-    <img class="file-upload-image" src="#" alt="your image" />
-    <div class="image-title-wrap">
-      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-    </div>
-  </div>
-</div>
 </div>
 </body>
 </html>

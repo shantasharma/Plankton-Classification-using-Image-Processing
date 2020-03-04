@@ -55,6 +55,7 @@
             <input type="file" class="form-control" id="zip" name="zip" required>
         </div> <br> <br> <br> <br>
         <button type="submit" class="btn btn-primary" value="Upload Image" onclick="document.getElementById('myInput').value">Submit</button> 
+        <a href="download.php">Download</a>
   </div>
 </div>
 </body>

@@ -11,8 +11,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css5/main.css">
+    
     <title>Services</title>
+    <link rel="stylesheet" href="css5/main.css">
+    
+
 </head>
 <body background="images/bg2option1.jpg">
 
@@ -47,15 +50,40 @@
     </header>
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-  <br> <br><br> <br><br> <br>
-  <div class="image-upload-wrap">
-    <form action="zip.php" method="post"  enctype="multipart/form-data" class="needs-validation" >
-        <div class="form-group">
-            <label for="zip">Upload a zip folder :</label>
-            <input type="file" class="form-control" id="zip" name="zip" required>
-        </div> <br> <br> <br> <br>
-        <button type="submit" class="btn btn-primary" value="Upload Image" onclick="document.getElementById('myInput').value">Submit</button> 
-       
+  
+        </div> 
+        <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            }
+        .button1 {
+            background-color: transparent; 
+            color: white; 
+            border: 2px solid #4CAF50;
+            }
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+            }
+        </style>
+        <br>
+        <br>
+        <br>
+        <center><h1 style="color:white !important"> Download your file! </h1></center>
+        <br>
+        <br>
+        <br>
+        <center><a class="button button1" href="download.php">Download</a></center>
   </div>
 </div>
 </body>

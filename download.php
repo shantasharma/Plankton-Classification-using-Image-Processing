@@ -7,7 +7,7 @@
  ?>
 <?php
    
-$file = ("C:\xampp\htdocs\download\AirQuality.csv");
+$file = ("C:/xampp/htdocs/output.csv");
 $filetype=filetype($file);
 $filename=basename($file);
 header ("Content-Type: ".$filetype);

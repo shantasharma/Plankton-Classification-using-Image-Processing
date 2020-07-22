@@ -16,9 +16,9 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D
 Data = "E:/Final project/train"
 Categories = ['ZOOPLANKTON', 'PHYTOPLANKTON']
 
-for category in Categories:  # do dogs and cats
-    path = os.path.join(Data,category)  # create path to dogs and cats
-    for img in os.listdir(path):  # iterate over each image per dogs and cats
+for category in Categories:  # 
+    path = os.path.join(Data,category)  # create path 
+    for img in os.listdir(path):  # iterate over each category
         img_array = cv2.imread(os.path.join(path,img) ,cv2.IMREAD_GRAYSCALE)  # convert to array
         plt.imshow(img_array, cmap='gray')  # graph it
         plt.show()  # display!

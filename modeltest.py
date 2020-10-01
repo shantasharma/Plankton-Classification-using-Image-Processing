@@ -52,7 +52,7 @@ for i in range(len(file)):
 test_datagen = ImageDataGenerator(rescale=1. / 255, )
 
 ##loading the model for prediction
-model = load_model('plankton5.h5')
+model = load_model('plankton11.h5')
 
 print("""
 <?php 
@@ -71,13 +71,13 @@ print("""
     <script> var garbage = ' """)
 test_generator = test_datagen.flow_from_directory(
     test_data_dir,
-    target_size=(150, 150),
+    target_size=(256, 256),
     batch_size=10,
-    classes = ['phytotest', 'zootest'],  shuffle = True)
+    classes = ['chaetognath_non_sagitta', 'chaetognath_other', 'chaetognath_sagitta', 'copepod_calanoid', 'copepod_cyclopoid_oithona', 'copepod_cyclopoid_oithona_eggs', 'detritus_other', 'hydromedusae_solmaris', 'echinoderm_larva_seastar_brachiolaria', 'appendicularian_s_shape', 'acantharia_protist', 'protist_noctiluca', 'protist_other', 'trichodesmium_bowtie', 'trichodesmium_puff', 'trichodesmium_tuft'],  shuffle = True)
 prediction = model.predict_generator(test_generator, steps = 2, verbose = 0)
 
 print(""" ' </script>""")
-df = pd.DataFrame(prediction, columns = ['Zoo' , 'Phyto'], index=names)
+df = pd.DataFrame(prediction, columns = ['chaetognath_non_sagitta', 'chaetognath_other', 'chaetognath_sagitta', 'copepod_calanoid', 'copepod_cyclopoid_oithona', 'copepod_cyclopoid_oithona_eggs', 'detritus_other', 'hydromedusae_solmaris', 'echinoderm_larva_seastar_brachiolaria', 'appendicularian_s_shape', 'acantharia_protist', 'protist_noctiluca', 'protist_other', 'trichodesmium_bowtie', 'trichodesmium_puff', 'trichodesmium_tuft'], index=names)
 
 df.to_csv('output.csv')
 
